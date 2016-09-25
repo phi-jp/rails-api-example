@@ -55,6 +55,25 @@ run the rspec installer
 $ bin/rails g rspec:install  
 ```
 
+## setup cors
+
+config/initializers/cors.rb
+
+```
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    # origins 'example.com'
+    origins '*'
+
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
+end
+```
+
+
+## default
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
