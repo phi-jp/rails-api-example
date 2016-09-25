@@ -73,6 +73,14 @@ end
 ```
 
 
+## todo
+
+- ユーザーのサインアップ/ログイン機能実装
+- jwt 導入
+- ユーザーにエントリーを紐付ける
+- テストの書き方を覚える
+
+
 ## default
 
 This README would normally document whatever steps are necessary to get the
