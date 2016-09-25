@@ -7,4 +7,14 @@ RSpec.describe "Users", :type => :request do
       expect(response).to have_http_status(200)
     end
   end
+
+  describe "POST /users", autodoc: true do
+    it "ユーザーを作成" do
+      # get users_path
+      # expect(response).to have_http_status(200)
+      user = {name:'test_user', email: 'test@example.com'}
+      post users_path, user: user
+      expect(response).to have_http_status(201)
+    end
+  end
 end
