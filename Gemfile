@@ -38,6 +38,7 @@ group :test do
   # Use RSpec for specs
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'autodoc'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -36,7 +36,7 @@ RSpec.describe UsersController, :type => :controller do
   # UsersController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
-  describe "GET index" do
+  describe "GET index", autodoc: true do
     it "assigns all users as @users" do
       user = User.create! valid_attributes
       get :index, {}, valid_session
@@ -52,12 +52,12 @@ RSpec.describe UsersController, :type => :controller do
     end
   end
 
-  describe "GET new" do
-    it "assigns a new user as @user" do
-      get :new, {}, valid_session
-      expect(assigns(:user)).to be_a_new(User)
-    end
-  end
+  # describe "GET new" do
+  #   it "assigns a new user as @user" do
+  #     get :new, {}, valid_session
+  #     expect(assigns(:user)).to be_a_new(User)
+  #   end
+  # end
 
   describe "GET edit" do
     it "assigns the requested user as @user" do
