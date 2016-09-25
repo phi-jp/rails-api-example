@@ -8,6 +8,27 @@ rails-api-example
 $ rails new . --api
 ```
 
+## setup user
+
+```
+$ bin/rails g scaffold user name email
+$ bin/rake db:migrate
+```
+
+## add user
+
+```
+$ bin/rails c
+> User.create(name:'phi', email:'phi1618jp@gmail.com')
+```
+
+## launch server
+
+```
+$ bin/rails s
+```
+
+access to <http://localhost:3000/users>
 
 
 
