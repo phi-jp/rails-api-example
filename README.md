@@ -31,6 +31,30 @@ $ bin/rails s
 access to <http://localhost:3000/users>
 
 
+## setup rspec
+
+add gem
+
+```
+group :test do
+  # Use RSpec for specs
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+```
+
+update bundle
+
+```
+$ bundle install
+```
+
+run the rspec installer
+
+```
+$ bin/rails g rspec:install  
+```
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
